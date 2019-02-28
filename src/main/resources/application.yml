@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: MerchantSignUp
+  profiles:
+    active:
+    - dev
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    generate-ddl: true
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type: TRACE
+      springframework:
+        boot:
+          autoconfigure:
+            logging: debug
+        web: DEBUG
